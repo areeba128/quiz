@@ -1,0 +1,28 @@
+# QUIZ GAME
+# import modules
+import time
+import turtle
+
+# Set up the screen
+wn = turtle.Screen()
+wn.setup(1000, 600)
+wn.colormode(255)
+wn.bgcolor(0, 0, 70)
+wn.title("The quiz by RKT")
+
+# Make boxes
+# box C
+turtle.speed(0)
+turtle.hideturtle()
+turtle.penup()
+turtle.goto(-450, -250)
+turtle.pendown()
+turtle.begin_fill()
+turtle.setheading(0)
+turtle.color("grey")
+for sides in range(2):
+    turtle.fd(425)
+    turtle.left(90)
+    turtle.fd(125)
+    turtle.left(90)
+turtle.end_fill()
