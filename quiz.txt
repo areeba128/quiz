@@ -86,3 +86,39 @@ quest.speed(0)
 quest.hideturtle()
 quest.penup()
 quest.goto(-425, 150)
+
+# Create score turtle
+score1 = turtle.Turtle()
+score1.speed(0)
+score1.hideturtle()
+score1.penup()
+score1.goto(250, 125)
+
+# Create Answer turtles
+# Option A
+A = turtle.Turtle()
+A.speed(0)
+A.hideturtle()
+A.penup()
+A.goto(-425, -50)
+
+# Option B
+B = turtle.Turtle()
+B.speed(0)
+B.hideturtle()
+B.penup()
+B.goto(50, -50)
+
+# Option C
+C = turtle.Turtle()
+C.speed(0)
+C.hideturtle()
+C.penup()
+C.goto(-425, -225)
+
+# Option D
+D = turtle.Turtle()
+D.speed(0)
+D.hideturtle()
+D.penup()
+D.goto(50, -225)
