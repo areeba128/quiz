@@ -166,3 +166,24 @@ def chooseAnswerA():
     global select
     select = 'B'
     evaluate()
+
+def chooseAnswerA():
+    global select
+    select = 'C'
+    evaluate()
+
+def chooseAnswerA():
+    global select
+    select = 'D'
+    evaluate()
+
+def evaluate():
+    global correctNow
+    global CurrentQ
+    if correct == select:
+        quest.clear()
+        quest.write("CORRECT!!!", font=("Verdana", 62, "bold"))
+        time.sleep(1.2)
+        score1.clear()
+        correctNow += 1
+        score1.write("{}".format(correctNow), font=("Verdana", 62, "bold"))
