@@ -187,3 +187,23 @@ def evaluate():
         score1.clear()
         correctNow += 1
         score1.write("{}".format(correctNow), font=("Verdana", 62, "bold"))
+
+    else:
+        quest.clear()
+        quest.write("WRONG! The answer was {}".format(correct), font=("Verdana", 62, "bold"))
+        time.sleep(1.2)
+        quest.clear()
+    CurrentQ += 1
+    clearBoard()
+    GetQuestionNum()
+
+def GetQuestionNum():
+    if CurrentQ == 2:
+        question2()
+
+def clearBoard():
+    quest.clear()
+    A.clear()
+    B.clear()
+    C.clear()
+    D.clear()
