@@ -53,6 +53,19 @@ for sides in range(2):
     turtle.left(90)
 turtle.end_fill()
 
+# box B
+turtle.penup()
+turtle.goto(25, -75)
+turtle.pendown()
+turtle.begin_fill()
+turtle.setheading(0)
+for sides in range(2):
+    turtle.fd(425)
+    turtle.left(90)
+    turtle.fd(125)
+    turtle.left(90)
+turtle.end_fill()
+
 # question box
 turtle.penup()
 turtle.goto(-450, 100)
@@ -122,3 +135,4 @@ D.speed(0)
 D.hideturtle()
 D.penup()
 D.goto(50, -225)
+
