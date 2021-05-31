@@ -162,17 +162,17 @@ def chooseAnswerA():
     select = 'A'
     evaluate()
 
-def chooseAnswerA():
+def chooseAnswerB():
     global select
     select = 'B'
     evaluate()
 
-def chooseAnswerA():
+def chooseAnswerC():
     global select
     select = 'C'
     evaluate()
 
-def chooseAnswerA():
+def chooseAnswerD():
     global select
     select = 'D'
     evaluate()
