@@ -136,3 +136,33 @@ D.hideturtle()
 D.penup()
 D.goto(50, -225)
 
+# Opening Credits
+quest.write("Welcome to the Quiz!", font=("Verdana", 23, "bold"))
+time.sleep(2)
+quest.clear()
+
+quest.write("Press a, b, c, or d to answer!", font=("Verdana", 23, "bold"))
+time.sleep(2)
+quest.clear()
+
+quest.write("Good Luck!", font=("Verdana", 23, "bold"))
+time.sleep(2)
+quest.clear()
+
+# Number of correct answers here
+correctNow = 0
+score1.write("{}".format(correctNow), font=("Verdana", 62, "bold"))
+
+# Variables
+CurrentQ = 1
+
+# Key Functions
+def chooseAnswerA():
+    global select
+    select = 'A'
+    evaluate()
+
+def chooseAnswerA():
+    global select
+    select = 'B'
+    evaluate()
