@@ -52,3 +52,37 @@ for sides in range(2):
     turtle.fd(125)
     turtle.left(90)
 turtle.end_fill()
+
+# question box
+turtle.penup()
+turtle.goto(-450, 100)
+turtle.pendown()
+turtle.begin_fill()
+turtle.setheading(0)
+for sides in range(2):
+    turtle.fd(625)
+    turtle.left(90)
+    turtle.fd(150)
+    turtle.left(90)
+turtle.end_fill()
+
+# score box
+
+turtle.penup()
+turtle.goto(225, 100)
+turtle.pendown()
+turtle.begin_fill()
+turtle.setheading(0)
+for sides in range(2):
+    turtle.fd(225)
+    turtle.left(90)
+    turtle.fd(150)
+    turtle.left(90)
+turtle.end_fill()
+
+# Create question turtle
+quest = turtle.Turtle()
+quest.speed(0)
+quest.hideturtle()
+quest.penup()
+quest.goto(-425, 150)
