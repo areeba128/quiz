@@ -1,9 +1,13 @@
+# Reference: https://www.youtube.com/watch?v=HBuMdz0WOHA
+
 # QUIZ GAME
 # import modules
+# import modules can be done using from statement specific attributes can be included in other progam.
 import time
 import turtle
 
 # Set up the screen
+# The turtle module provides turtle graphics primitives.
 wn = turtle.Screen()
 wn.setup(1000, 600)
 wn.colormode(255)
@@ -157,6 +161,8 @@ score1.write("{}".format(correctNow), font=("Verdana", 62, "bold"))
 CurrentQ = 1
 
 # Key Functions
+# Function in python is defined by the 'def' statement followed by the function name and paranthesis.
+# Global variables can be used by everyone, both inside of functions and outside.
 def chooseAnswerA():
     global select
     select = 'A'
@@ -182,7 +188,7 @@ def evaluate():
     global CurrentQ
     if correct == select:
         quest.clear()
-        quest.write("CORRECT!!!", font=("Verdana", 62, "bold"))
+        quest.write("CORRECT!!!", font=("Verdana", 23, "bold"))
         time.sleep(1.2)
         score1.clear()
         correctNow += 1
@@ -190,7 +196,7 @@ def evaluate():
 
     else:
         quest.clear()
-        quest.write("WRONG! The answer was {}".format(correct), font=("Verdana", 62, "bold"))
+        quest.write("WRONG! The answer was {}".format(correct), font=("Verdana", 23, "bold"))
         time.sleep(1.2)
         quest.clear()
     CurrentQ += 1
@@ -207,3 +213,32 @@ def clearBoard():
     B.clear()
     C.clear()
     D.clear()
+
+def question1():
+    quest.write("What version of python do I use?", font=("Verdana", 23, "bold"))
+    A.write("A. 3.7.3 (Windows)", font=("Verdana", 23, "bold"))
+    B.write("B. 2 (Windows)", font=("Verdana", 23, "bold"))
+    C.write("C. 3.7.3 (Mac)", font=("Verdana", 23, "bold"))
+    D.write("D. 2 (Mac)", font=("Verdana", 23, "bold"))
+    global correct
+    correct = 'A'
+
+def question2():
+    quest.write("What is the output of this 3*1**3?", font=("Verdana", 21, "bold"))
+    A.write("A. 27", font=("Verdana", 23, "bold"))
+    B.write("B. 9", font=("Verdana", 23, "bold"))
+    C.write("C. 3", font=("Verdana", 23, "bold"))
+    D.write("D. 1", font=("Verdana", 23, "bold"))
+    global correct
+    correct = 'C'
+
+# key bindings
+wn.listen()
+wn.onkeypress(chooseAnswerA, "a")
+wn.onkeypress(chooseAnswerB, "b")
+wn.onkeypress(chooseAnswerC, "c")
+wn.onkeypress(chooseAnswerD, "d")
+
+#Start Game
+question1()
+        
